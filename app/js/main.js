@@ -20,6 +20,13 @@ $(function(){
         to: 600,
         prefix: "$"
   });
+  
+  $('.icon-th-list').on('click', function(){
+    $('.product__item').addClass('list')
+  });
 
+  $('.icon-th-large').on('click', function(){
+    $('.product__item').removeClass('list')
+  });
   var mixer = mixitup('.products__inner-box');
 });

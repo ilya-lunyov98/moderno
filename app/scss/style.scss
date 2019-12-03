@@ -164,6 +164,7 @@
 }
 
 .product__item{
+
 max-width: 442px;
 width: 100%;
 box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
@@ -592,7 +593,7 @@ margin-bottom: 15px;
   border: 1px solid #d7d7d7;
   padding: 0px 32px 32px;
   margin-bottom: 30px;
-  width: 270px;
+  width: 270px; 
 }
 .aside__title{
   border-bottom: 1px solid #dde3e8;
@@ -757,4 +758,118 @@ display: none;
   text-align: center;
 }
 
-//product-page end
+.product-page__filter{
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  padding: 0px 20px ;
+  margin-bottom: 30px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button{
+    cursor: pointer;
+    background-color: transparent;
+    border:none;
+    font-size: 16px;
+    color: #90a4ae;
+    &.active{
+      color: $green;
+    }
+  }
+}
+.product-page__filter-sort{
+  color: #707070;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+button.icon-sort-amount-desc{
+  font-size: 18px;
+  color: #455a64;
+}
+.product-page__content{
+  width: 100%; 
+}
+.icon-unsorted{
+  font-size: 14px;
+  color: #707070;
+}
+.icon-th-list{
+  color: #90a4ae;
+}
+.product-page__content{
+  .product__item{
+    max-width: 270px;
+    background-color: #fff;
+    transition: all .3s;
+  }
+  .product__item:hover{
+    box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
+    transition: .3s;
+    // max-width: 270px;
+    // background-color: #fff;
+  }
+  .product__item-img{
+    min-height: 180px;
+  }
+}
+.product__item-content{
+  padding: 10px 20px; 
+}
+.product__item-title{
+font-size: 16px;
+}
+.product__item-info{
+  min-height: 65px;
+  padding: 10px 20px;
+}
+.jq-ry-container{
+  padding: 0;
+}
+.product-page__items{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap:wrap;
+}
+.product-page__inner{
+  padding-bottom: 110px;
+}
+.pagination__list{
+  li{        
+    display: inline-block;
+    &+li{
+      margin-left: 6px;
+  
+    }
+    a, span{
+   box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);   
+   width: 43px;
+   height: 38px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   font-size: 16px;
+   color: $bg;
+   @include f500;
+   &.active {
+     background-color: $red;
+     color: #fff;
+   }
+    }
+  }
+}
+
+.product__item {
+  &.list{
+    max-width: 100%;
+  }
+}
+  
+
+
+
+  // color: #8bc34a;
+  
