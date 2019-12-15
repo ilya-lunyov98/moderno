@@ -113,11 +113,14 @@ body {
   position: relative;
   padding-left: 15px;
   &::before{
-    content: "\f105";
+    content: "\f023";
     font-family: 'icomoon';
     position: absolute;
     left: 0;
     color: $green;
     font-size: 14px;
   }
+}
+.angle-right1{
+  
 }
